@@ -1,0 +1,11 @@
+ques) 	What is the difference between rebase and git merge?
+
+ans)
+ Git merge : Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent 	      lines of development created by git branch and integrate them into a single branch.
+	     Git merge is used to combine two branches.it merge takes two commit pointers, usually the branch tips, and will find a common 		     base commit between them. Once Git finds a common base commit it will create a new "merge commit" that combines the changes 		     of each queued merge commit sequence.
+	
+Git rebase: Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and 		    easily visualized in the context of a feature branching workflow.
+	    The primary reason for rebasing is to maintain a linear project history. For example, consider a situation where the main      
+	    branch has progressed since you started working on a feature branch. You want to get the latest updates to the main branch in 
+	    your feature branch, but you want to keep your branch's history clean so it appears as if you've been working off the 
+	    latest main branch. This gives later benefit of a clean merge of your feature branch back into the main branch
