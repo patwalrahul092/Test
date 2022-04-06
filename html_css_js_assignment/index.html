@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Records</h1>
+        <div class="access-button">
+            <button  onclick="openform()">Add Employee</button>
+            <button id="btnopenDelform" onclick="openDeleteForm()" > Delete Employee</button>
+            <button id="closeaddempform" onclick="closeform()">close form</button>
+        </div>
+        
+    </header>
+    <div class="container">
+        <table id="list">
+            <tr>
+                <th>Employee Name</th>
+                <th>Employee Code</th>
+                <th>Employee Email</th>
+                <th>Gender</th>
+                <th>Designation</th>
+                <th>Date of Birth</th>
+            </tr>
+        </table>
+        <div class="main-form-container">
+            <form action="/index.html" id="form" style="display: none" onsubmit="addEmployees();">
+                <h1>Add Employee Details</h1>
+                <div class="form-container">
+                    <div class="box">
+                        <span id="emp_name">Employee Name</span>
+                        <input type="text" name="emp_name " pattern="[a-zA-Z ]{5,}"><br>
+                    </div>
+                    <div class="box">
+                        <span>Employee Code</span>
+                        <input type="number"><br>
+                    </div>
+                    <div class="box">
+                        <span>Employee Email</span>
+                        <input type="email"><br>
+                    </div>
+                    <div class="emp-gender box">
+                        <span>Employee Gender</span> <br>
+                        <div class="radio-container">
+                            <div class="option">
+                                <input type="radio" name="gender" value="male"> Male
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="gender" value="female"> Female
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="box">
+                        <span>Designation</span>
+                        <input type="text" ><br>
+                    </div>
+                    <div class="box">
+                        <span>Date of Birth</span>
+                        <input type="date" ><br>
+                    </div>
+                </div>
+                <button id="AddEmp" type="submit">submit</button>
+            </form>
+        </div>
+        <form action="./index.html" class="delete_form" style="display: none"  onsubmit="deleteEmployee()">
+            <div class="delete-header">
+                <h1>Delete Employee Details</h1> <br>
+            </div>
+            <div class="delete-container">
+                <div class="delete-employee">
+                    <span>Enter employee code to delete</span>
+                    <input type="number" name="emp_id" id="Emp_id">
+                </div>
+                <div class="delete-buttons">
+                    <button id="DeleteEmp" type="submit">submit</button>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

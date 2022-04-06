@@ -1,0 +1,150 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button{
+    height: 40px;
+    margin: 20px 20px;
+    background-color: #0a7fed;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    width: 90%;
+    /* border: 1px solid black;  */
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+table th, table td{
+    border: 1px solid black;
+    background-color: rgba(211, 209, 209, 0.623)
+}
+
+.main-form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    width: 60%;
+}
+form input{
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+input[type= radio]{
+    border: 0px;
+    width: 20px !important;
+    height: 2em;
+    margin-right: 2px;
+}
+
+table th{
+    background-color:whitesmoke;
+    height: 30px;
+    font-size: 18px;
+}
+
+table tr{
+    height: 30px;
+    font-size: 18px;
+}
+
+table tr td{
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.name_error{
+    display: none;
+}
+
+.form-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 100%;
+}
+
+.box span{
+    margin-left: 5px 60px 5px 0px;
+    font-size: 20px;
+    float:left;
+}
+
+.box input{
+    margin-left: 20px;
+    float:right;
+}
+
+.option{
+    display: inline-block;
+    height: 35px;
+    line-height: 45px;
+    margin-right: 40px;
+}
+
+.radio-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.emp-gender{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.emp-gender span{
+    margin-right: 60px;
+}
+
+.delete-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-employee span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+
+.closeaddempform{
+    display: none;
+}
